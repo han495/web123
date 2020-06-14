@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>乐督督</title>
+	<style>
+		body{
+			background-color: black;
+		}
+		.clear:after {
+    		content: '';
+    		display: block;
+    		height: 0;
+    		clear: both;
+		}
+		.all{
+			width: 1400px;
+			height: 1500px;
+			position: relative;
+			background-color: black;
+		}
+		.one{
+			width:1100px;
+			height:500px;
+			padding-top: 10px;
+		}
+		.logo{
+			width:10px;
+			height:5px;
+			top:0px;
+			left:170px;
+			position: relative;
+		}
+		.title{
+			font-size: 30px;
+			font-weight: 800;
+			color: orange;
+			padding-left:380px;
+			top:40px;
+			position: relative;
+			
+		}
+		form{
+			position: relative;
+			left: 950px;
+			top: 0px;
+		}
+		.search{
+			float: left;
+			width: 200px;
+			padding: 9px;
+			border: 1px solid;
+		}
+		.fa-search{
+			width: 20px;
+			height: 20px;
+			position: relative;
+			left: 923px;
+			top: 8px;
+		}
+		.button{
+			float: left;
+			width: 35px;
+			height: 35px;
+			background:black;
+			background-size: 100% auto;
+		}
+		.banner{
+			width: 1080px;
+			height: 337px;
+			position: absolute;
+			top: 150px;
+			left: 140px;
+		}
+		.list{
+			width: 1080px;
+			height: 50px;
+			background-color: orange;
+			padding-top: 10px;
+			position: absolute;
+			left: 140px;
+			top: 100px;
+		}
+		.list ul li a{
+			display: inline-block;
+			width: 124px;
+			float: left;
+			border-left: 1px black dotted;
+			border-right: 1px black dotted;
+			text-align: center;
+			color: white;
+			background-color: black;
+			font-size: 15px;
+		}
+		.list li{
+			display: inline-block;
+			width: 124px;
+			height: 25px;
+			text-align: center;
+			float: left;
+			position: relative;
+			left: 170px;
+			top: 0px;
+			background-color: black;
+		}
+		.list a:hover{
+			border-bottom: 2px orange solid;
+			color:orange;
+			font-size: 20px;
+		}
+		.denglu{
+			width:300px;
+			height:250px;
+			background-color: white;
+			opacity: 0.6;
+			top:180px;
+			left:800px;
+			position: absolute;
+
+		}
+		.gg p{
+			color:black;
+			font-size: 20px;
+			padding-left: 15px;
+			width:66px;
+			height:30px;
+			text-align: center;
+			font-weight: 600;
+		}
+		.gg1{
+			color:black;
+			font-size: 20px;
+			left: 918px;
+			top:300px;
+			width:66px;
+			height:30px;
+			text-align: center;
+			position: absolute;
+		}
+		.gg2{
+			color:black;
+			font-size: 20px;
+			left: 918px;
+			top:347px;
+			width:66px;
+			height:30px;
+			text-align: center;
+			position: absolute;
+		}
+		.hh1{
+			position: relative;
+			left: 640px;
+			height:40px;
+			top:125px;
+		}
+		.hh2{
+			position: relative;
+			left: 894px;
+			height:40px;
+			top:139px;
+		}
+
+		.button1{
+			width:200px;
+			height:40px;
+			background-color: orange;
+			top:160px;
+			right:100px;
+			position: relative;
+		}
+		.button2{
+			width:200px;
+			height:40px;
+			background-color: silver;
+			top:160px;
+			right:100px;
+			position: relative;
+		}
+		.two{
+			width:1080px;
+			height:500px;
+			top:500px;
+			left:140px;
+			position: absolute;
+			float: left;
+		}
+		.aa {
+			border: 1px;
+			width: 350px;
+			height: 500px;
+			padding: 4px;
+			float: left;
+			position: relative;
+			border-left: 1px silver dotted;
+			border-right: 1px silver dotted;
+		}
+		.picture{
+			width:350px;
+			height:300px;
+			padding: 0px;
+		}
+		.word{
+			width:350px;
+			height:300px;
+			padding-top: 10px;
+			color: white;
+
+		}
+		.yin{
+			width: 350px;
+			height: 40px;
+			background-color: black;
+			opacity: 0.4;
+			font-size: 18px;
+			position: absolute;
+			bottom: 0px;
+			padding-bottom: 30px;
+			color: white;
+			top:230px;
+		}
+		.bb{
+			font-size: 25px;
+			text-align: center;
+		}
+		.three{
+			width: 1400px;
+			height: 400px;
+			background-color:rgb(60,60,60);
+			position: absolute;
+			left: 0;
+			top:2220px;
+		}
+		.ledudu{
+			font-size:50px;
+			font-family:Microsoft YaHei;
+			font-weight:bold;
+			color:yellow;
+			position: absolute;
+			left: 140px;
+			top: 100px;
+			
+		}
+		.explain{
+			font-size: 20px;
+			color: white;
+			position: absolute;
+			left: 140px;
+			top: 180px;
+			
+		}
+		.app a{
+			display: block;
+			width: 110px;
+			height: 32px;
+			padding-top: 5px;
+			font-size: 20px;
+			position: absolute;
+			left: 140px;
+			top: 230px;
+			text-align: center;
+			color: yellow;
+			border:2px yellow solid;
+			
+		}
+		ul{
+			list-style-type:none;
+		}
+		.cc{
+			width:550px;
+			height: 300px;
+			background-color:rgb(60,60,60);
+			position: absolute;
+			right: 150px;
+			top: 0;
+		}
+		.dd{
+			width: 1400px;
+			height: 100px;
+			background-color:rgb(60,60,60);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		.ee{
+			text-align: center;
+			color:white;
+			font-size: 15px;
+
+		}
+		.ff{
+			font-size: 25px;
+			color: silver;
+			text-align: center;
+		}
+		.ff:hover{
+			border-bottom: 2px white solid;
+			font-size: 30px;
+		}
+		.logo2{
+			height:100px;
+			width:200px;
+			top:30px;
+			left:130px;
+			position: absolute;
+			border:rgb(60,60,60);
+		}
+		.ff a:link{
+			text-decoration: none;
+		}
+		.ff a:hover{
+			color:white;
+		}
+		.four{
+			width: 1100px;
+			height: 1170px;
+			position: absolute;
+			left: 130px;
+			top:1020px;
+			border: 2px pink dotted;
+		}
+		.jieshao{
+			color:yellow;
+			font-size: 26px;
+			position: absolute;
+			top:0px;
+			left: 45px;
+		}
+		.yiduiyi{
+			background-color: grey;
+			left:0px;
+			top:80px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi1{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+		}
+		.ii1{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+		.duoduiyi{
+			background-color: grey;
+			left:0px;
+			top:350px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi2{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.ii2{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+		.duoren{
+			background-color: grey;
+			left:0px;
+			top:620px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi3{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+		}
+		.ii3{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+		.yunzixi{
+			background-color: grey;
+			left:0px;
+			top:890px;
+			position: absolute;
+			border-bottom: 1px grey dotted;
+			border-top: 1px grey dotted;
+		}
+		.moshi4{
+			height: 200px;
+			width:400px;
+			position: absolute;
+			left:50px;
+			top:5px;
+		}
+		.ii4{
+			height: 200px;
+			width: 480px;
+			left:590px;
+			color: grey;
+			position: absolute;
+			font-size: 22px;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="one">
+			<div class="logo">
+				<img src="C:\Users\user\Desktop\web大作业\logo.png">
+			</div>
+			<div class="title">
+				乐督督
+			</div>
+			<form>
+				<input type="text" name="search" class="search">
+				<input type="button" name="submit" class="button">
+			</form>
+			<img src="C:\Users\user\Desktop\web大作业\search.jpg" class="fa-search">
+			<div class="list">
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">模式介绍</a></li>
+					<li><a href="">计划圈子</a></li>
+					<li><a href="">监督学习</a></li>
+					<li><a href="">个人中心</a></li>
+				</ul>
+			</div>
+			<img src="C:\Users\user\Desktop\web大作业\banner.jpg" class="banner">
+			<div class="denglu">
+				<div class="gg">
+					<p>用户名:</p>
+				</div>
+				<div class="gg">	
+					<p>密码:</p>
+				</div>
+			</div>
+			<form class="hh1">
+				<input type="text" name="username" value=""/>
+			</form>
+			<form class="hh2">
+				<input type="password" name="password" value=""/>
+			</form>
+			<form class="hh3">
+				<input type="button" name="submit" class="button1">
+			</form>
+			<div class="gg1">
+				<p>登录</p>
+			</div>
+			<form class="hh4">
+				<input type="button" name="submit" class="button2">
+			</form>
+			<div class="gg2">
+				<p>注册</p>
+			</div>
+		</div>
+		<div class="two">
+			<div class="aa">
+				<div class="picture">
+					<img src="C:\Users\user\Desktop\web大作业\study.jpg">
+				</div>
+				<div class="yin">
+					<p class="bb">监督学习</p>
+				</div>
+				<div class="word">
+					<p class="ff"><a href="">一对一模式</a></p>
+					<p class="ff"><a href="">多对一模式</a></p>
+					<p class="ff"><a href="">多人模式</a></p>
+				</div>
+			</div>
+			<div class="aa">
+				<div class="picture">
+					<img src="C:\Users\user\Desktop\web大作业\plan.jpg">
+				</div>
+				<div class="yin">
+					<p class="bb">制定计划</p>
+				</div>
+				<div class="word">
+					<p class="ff"><a href="">英语四六级</a></p>
+					<p class="ff"><a href="">运动打卡</a></p>
+					<p class="ff"><a href="">自定义计划</a></p>
+				</div>
+			</div>
+			<div class="aa">
+				<div class="picture">
+					<img src="C:\Users\user\Desktop\web大作业\zixi.jpg">
+				</div>
+				<div class="yin">
+					<p class="bb">云自习</p>
+				</div>
+				<div class="word">
+					<p class="ff"><a href="">平台大自习</a></p>
+					<p class="ff"><a href="">好友自习</a></p>
+					<p class="ff"><a href="">单人自习</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="four">
+			<div class="jieshao">
+				<p>模式介绍</p>
+			</div>
+			<div class="yiduiyi">
+				<div class="moshi1">
+					<img src="C:\Users\user\Desktop\web大作业\一对一.png">
+				</div>
+				<div class="wenzi1">
+					<p class="ii1">一对一模式：每位线上用户均可以在设定目标后，寻找与自己目标相近的好友或陌生人组成监督小组，每日打卡以完成既定目标，并由一位监督人来评判。</p>
+				</div>
+			</div>
+			<div class="duoduiyi">
+				<div class="moshi2">
+					<img src="C:\Users\user\Desktop\web大作业\多对一.png">
+				</div>
+				<div class="wenzi2">
+					<p class="ii2">多对一模式：每位线上用户设定目标后，放置督督币作为底金，由多人围观监督，每位用户都相当于一个监督者，如果这位用户完成目标，则平台会给予相应的督督币奖励，如果没有完成任务，则会有平台抽取 20%，剩下由监督者平分。</p>
+				</div>
+			</div>
+			<div class="duoren">
+				<div class="moshi3">
+					<img src="C:\Users\user\Desktop\web大作业\多人.png">
+				</div>
+				<div class="wenzi3">
+					<p class="ii3">多人模式：多人互助学习将以共同目标为主要分组要求（例如考研、四六级等），推荐以四人模式（两男两女）为主，四人模式经实验表明为最优化学习团队模式，团队中每个人均不会被忽略，同时在个体间关系中，由于异性效应的影响，每个人的活动和学习更能激发学习的愉悦感和动力。</p>
+				</div>
+			</div>
+			<div class="yunzixi">
+				<div class="moshi4">
+					<img src="C:\Users\user\Desktop\web大作业\云自习.png">
+				</div>
+				<div class="wenzi4">
+					<p class="ii4">本平台设有云自习室，用户可选择花费督督币自定房间与线上好友共同自习，或加入平台大自习室进行自习。</p>
+				</div>
+			</div>
+		</div>
+		<div class="three">
+			<div class="cc">
+				<ul>
+					<li class="ledudu">乐督督</li>
+					<li class="explain">致力于打造线上学习平台，满足当代学生需求</li>
+					<li class="app"><a href="">下载APP</a></li>	
+				</ul>
+			</div>	
+			<div class="logo2">
+				<img src="C:\Users\user\Desktop\web大作业\logo2.png">
+			</div>
+			<div class="dd">
+				<p class="ee">| 版权归乐督督开发小组所有 |</p>
+				<p class="ee">| 最终解释权归乐督督开发小组所有 |</p>
+			</div>
+	</div>
+</body>
+</html>
